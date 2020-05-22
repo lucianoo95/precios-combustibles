@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -13,5 +14,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://github.com/lucianoo95/precios-combustibles#readme"
+  "homepage": "https://github.com/lucianoo95/precios-combustibles#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

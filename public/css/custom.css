@@ -20,12 +20,12 @@
 }
 
 .map-vertical {
-    height: 710px;
+    height: 540px;
     /* position: absolute; */
 }
 
 .map-horizontal {
-    height: 320px;
+    height: 305px;
 }
 
 body {

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mapas | Establecimientos</title>
+    <!-- Css cdn goopgle icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bottom-navbar navbar-dark bg-dark pt-0 pb-1 pl-0 pr-0 font-italic">
+
+        <a class="navbar-brand ml-3 mr-3 mx-auto" href="#">
+            Precios <b>Combustibles</b>
+            <i class="material-icons text-white">local_gas_station</i>
+        </a>
+
+        <div class="col-lg-6 col-sm-6 mt-2 mb-2">
+            <!-- Form -->
+            <form id="form-app">
+                <div class="input-group mx-auto">
+                    <select class="form-control" id="select-province" autofocus>
+                        <option value="0">Provincia</option>
+                        <option value="MENDOZA">Mendoza</option>
+                        <option value="SAN LUIS">San Luis</option>
+                        <option value="SAN JUAN">San Juan</option>
+                        <option value="CORDOBA">Córdoba</option>
+                        <option value="SANTA FE">Santa Fe</option>
+                        <option value="BUENOS AIRES">Buenos Aires</option>
+                        <option value="ENTRE RIOS">Entre Rios</option>
+                    </select>
+                    <select class="form-control" id="type-fuel">
+                        <option value="0">Combustible</option>
+                        <option value="Nafta (súper) entre 92 y 95 Ron">Nafta (super)</option>
+                        <option value="Nafta (premium) de más de 95 Ron">Nafta (premium)</option>
+                        <option value="Gas Oil Grado 2">Gas Oil Grado 2</option>
+                        <option value="Gas Oil Grado 3">Gas Oil Grado 3</option>
+                        <option value="GNC">GNC</option>
+                    </select>
+                    <div class="input-group-prepend">
+                        <button type="submit" class="btn btn-success rounded-right font-italic" type="button"
+                            id="button-addon1">Buscar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </nav>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 p-0">
+                    <div id="mapa" class="map-vertical"></div>
+                    <div id="message" class="mt-5 text-center"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- My scripts -->
+    <script src="js/API.js"></script>
+    <script src="js/UI.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

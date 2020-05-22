@@ -1,0 +1,39 @@
+#buscar {
+    position: relative;
+
+}
+
+@media (max-width: 768px) {
+
+    #buscar,
+    #buscar input {
+        width: 100%;
+    }
+}
+
+#resultado {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 100;
+    width: 100%;
+}
+
+.map-vertical {
+    height: 710px;
+    /* position: absolute; */
+}
+
+.map-horizontal {
+    height: 320px;
+}
+
+body {
+    margin: 0;
+}
+
+.bottom-navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

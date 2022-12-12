@@ -16,6 +16,6 @@
   "license": "ISC",
   "homepage": "https://github.com/lucianoo95/precios-combustibles#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   }
 }
